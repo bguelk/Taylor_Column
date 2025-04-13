@@ -1,0 +1,23 @@
+# Open-boundaries
+ &OBCS_PARM01
+# This flag turns off checking and fixing problematic topography across 
+# open boundaries.
+ OBCSfixTopo=.FALSE.,
+ OB_Jnorth= 60*0,
+ OB_Jsouth= 60*0,
+ OB_Ieast= 40*-1,
+ OB_Iwest= 40*1,
+ useOBCSprescribe = .TRUE.,
+ OBEuFile = 'Uvel5000_utw_realistic_xzy_100_25km.bin',
+ OBWuFile = 'Uvel5000_utw_realistic_xzy_100_25km.bin',
+ OBEtFile = 'T5000_obcs_realistic_100_25km.bin',
+ OBWtFile = 'T5000_obcs_realistic_100_25km.bin',
+ OBCS_monitorFreq= 86400.,
+ OBCS_monSelect = 1,
+ &
+
+# Orlanski parameters
+ &OBCS_PARM02
+#Cmax=0.45,
+#cVelTimeScale=1000.,
+ &
